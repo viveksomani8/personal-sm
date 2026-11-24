@@ -1,0 +1,15 @@
+# Per-video media is not tracked: it is large and can be regenerated from the
+# scripts, captions and prompts. Only what is needed to produce more videos is kept.
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.webp
+__pycache__/
+*.pyc
+
+# The shared folder holds the few media files every new video needs
+# (character references and the laugh track), so it is tracked.
+!YouTube/shared/**
